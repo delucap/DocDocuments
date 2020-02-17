@@ -23,4 +23,4 @@ N.B. Each data source, such as Scopus, allows us to use downloaded data from its
 This app is built by exploiting NativeScript framework for designing application cross-platforms. More precisely the backside part exploits a very simple Angular consumer for the RESTful API used for achieving data.
 
 # Credits
-DocDocuments has been developed by [Pasquale De Luca](https://github.com/pascal888)(https://github.com/pascal888)(https://scholar.google.it/citations?user=8jw-QKwAAAAJ&hl=it&authuser=3)
+DocDocuments has been developed by [Pasquale De Luca, GitHub](https://github.com/pascal888) [Pasquale De Luca, Scholar] (https://scholar.google.it/citations?user=8jw-QKwAAAAJ&hl=it&authuser=3)
