@@ -1,0 +1,134 @@
+﻿/*
+In NativeScript, the app.css file is where you place CSS rules that
+you would like to apply to your entire application. Check out
+http://docs.nativescript.org/ui/styling for a full list of the CSS
+selectors and properties you can use to style UI components.
+
+/*
+In many cases you may want to use the NativeScript core theme instead
+of writing your own CSS rules. You can learn more about the 
+NativeScript core theme at https://github.com/nativescript/theme
+The imported CSS rules must precede all other types of rules.
+*/
+@import "~@nativescript/theme/css/core.css";
+/*@import "~@nativescript/theme/css/default.css";*/
+/*@import '~@nativescript/theme/css/aqua.css';
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+
+/*
+The following CSS rule changes the font size of all Buttons that have the
+"-primary" class modifier.
+*/
+
+CardView.cardStyle {
+    background-color: #3489db;
+    color: blue;
+  }
+
+
+Button.-primary {
+    animation-name: transformed;
+    animation-duration: 1;
+    animation-fill-mode: forwards;
+
+    font-size: 18;
+    background-color: green;
+    animation-name: button_selected;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    color: white;
+
+}
+
+@keyframes button_selected {
+    from { background-color: white; }
+    to { background-color: rgb(134, 103, 103);
+        text-shadow: 20px 20px black; }
+}
+
+TextField.-secondary {
+
+    animation-name: transformed;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.transformed {
+    animation-name: transformed;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transformed {
+    from { transform: translate(1000, 100); ; }
+
+    to  { transform: rotate(0); }
+}
+
+@keyframes entry {
+    from { transform: translate(100, 0);
+           opacity: 0 }
+    50% {transform: translate(-20,0);
+         opacity: 0.8 }
+   
+    to { transform: translate(0,0);
+         opacity: 1 }
+    
+
+
+}
+
+Label.-entry {
+    animation-name: entry;
+    animation-duration: 1.5;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+
+Image.-bounce{
+    animation-duration: 1s;
+    animation-name: bounce;
+}
+
+@keyframes bounce {
+    from, 20%, 53%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(-200,0,0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0,-4px,0);
+        transform: translate3d(0,-4px,0);
+    }
+}
+
+Image {
+    width: 400;
+    height: 200;
+    animation-duration: 1.5s;
+    animation-name: bounce2;
+}
+
+Image.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+}
+
+Image.t-36 {
+    font-size: 36;
+}
+@keyframes bounce2 {
+    from, 20%, 53%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(-2000,0,0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0,-4px,0);
+        transform: translate3d(0,-4px,0);
+    }
+}

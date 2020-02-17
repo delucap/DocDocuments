@@ -1,0 +1,4 @@
+/Users/pasqualedeluca/Desktop/DocDocuments/DocDocuments/platforms/android/app/src/main/assets/app/runtime.js
+/Users/pasqualedeluca/Desktop/DocDocuments/DocDocuments/platforms/android/app/src/main/assets/app/bundle.js
+/Users/pasqualedeluca/Desktop/DocDocuments/DocDocuments/platforms/android/app/src/main/assets/app/vendor.js
+/Users/pasqualedeluca/Desktop/DocDocuments/DocDocuments/platforms/android/app/src/main/assets/app/tns-java-classes.js

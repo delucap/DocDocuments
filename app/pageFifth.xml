@@ -1,0 +1,25 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" navigatingTo="onNavigatingTo" class="diocan" backgroundColor="rgb(210, 231, 239)"><!-- loaded="pageLoaded"-->
+    <ActionBar title="Results " class="action-bar" >
+         <NavigationButton android.systemIcon="ic_menu_back" text="Back" tap="goBack"></NavigationButton>
+    </ActionBar>
+
+<lv:RadListView items="{{ itemsView }}" class="list-group" itemTap="goToURL" loaded="rdlistloaded" itemLoading="onItemLoading" backgroundColor="transparent" > 
+    <lv:RadListView.listViewLayout>
+        <lv:ListViewLinearLayout scrollDirection="Vertical"/>
+    </lv:RadListView.listViewLayout>
+    <lv:RadListView.itemTemplate>
+        <GridLayout class="list-group-item" rows="auto" columns="auto, *" backgroundColor="rgb(210, 231, 239)">
+            <Image width="150" height="150" row="0" col="0" src="{{ itemImage }}" class="-bounce"/>
+            <StackLayout row="0" col="1">
+                <Label text="{{ itemTitle }}" textWrap="true" class="list-group-item-heading" class="-entry"/>
+                <Label text="{{ itemName }}" textWrap="true" class="list-group-item-heading" class="-entry"/>
+                <Label text="{{ itemDesc }}" textWrap="true" class="list-group-item-text" class="-entry"/>
+                <Button text="Info authors" textWrap="true" class="list-gruoup-item-text" tap="showInfoAuthors" class="-primary"></Button>
+                <Button text="See references" textWrap="true" class="list-gruoup-item-text" tap="showRefs" class="-primary"></Button>
+             <StackLayout height="4" backgroundColor="Black"/>
+            </StackLayout>
+      
+        </GridLayout>
+    </lv:RadListView.itemTemplate>
+</lv:RadListView>
+</Page>

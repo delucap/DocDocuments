@@ -1,0 +1,26 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"  xmlns:Card="nativescript-cardview" xmlns:lv="nativescript-ui-listview" xmlns:lv="nativescript-ui-listview" navigatingTo="onNavigatingTo"><!-- loaded="pageLoaded"-->
+    <ActionBar title="Author's articles" class="action-bar">
+         <NavigationButton android.systemIcon="ic_menu_back" text="Back" tap="goBack"></NavigationButton>
+    </ActionBar>
+
+
+<GridLayout backgroundColor="rgb(210, 231, 239)">
+<lv:RadListView items="{{ articleViews }}" class="list-group" itemTap="goToDoi" separatorColor="orangered">
+    <lv:RadListView.listViewLayout>
+        <lv:ListViewLinearLayout scrollDirection="Vertical"/>
+    </lv:RadListView.listViewLayout>
+    <lv:RadListView.itemTemplate>
+        <StackLayout orientation="vertical" >
+                <Label text="{{ articleTitle }}" textWrap="true" class="-entry"/>
+                <Label text="{{ authorsName }}"  textWrap="true" class="-entry"/>
+                <Label text="{{ itemDesc }}" textWrap="true"  class="-entry"/> 
+                <StackLayout height="2" backgroundColor="Black"/>
+        </StackLayout>
+                <!--<Button text="Info authors" textWrap="true" class="list-gruoup-item-text" tap="showInfoAuthors"></Button>
+                <Button text="See references" textWrap="true" class="list-gruoup-item-text" tap="showRefs"></Button>
+                Label text="{{ authorsName }}"  textWrap="true" class="-entry"/>
+                <Label text="{{ itemDesc }}" textWrap="true"  class="-entry"/> -->
+    </lv:RadListView.itemTemplate>
+</lv:RadListView>
+</GridLayout>
+</Page>

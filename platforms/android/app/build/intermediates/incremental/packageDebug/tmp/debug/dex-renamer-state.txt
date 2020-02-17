@@ -1,0 +1,4 @@
+#Mon Feb 17 16:52:35 CET 2020
+base.0=/Users/pasqualedeluca/Desktop/DocDocuments/DocDocuments/platforms/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
